@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Janani | Portfolio</title>
+  <meta name="description" content="Portfolio of S. Janani - BCA Student and Aspiring Software Developer." />
+  <meta name="theme-color" content="#8b6fe8" />
+
+  <!-- Fonts & icons (need internet; the site still works with fallback fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Name is filled automatically from data.js -->
+      <a href="#home" class="brand" data-bind="brand">S. Janani</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="hello">Hello, I'm</p>
+          <h1 class="hero-name" data-bind="name">S. Janani</h1>
+          <p class="hero-role" data-bind="role"></p>
+          <p class="hero-tagline" data-bind="tagline"></p>
+          <p class="hero-intro" data-bind="intro"></p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" id="resumeBtn" href="#" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a class="btn btn-outline" href="#contact">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="socials" id="heroSocials"></div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-ring">
+            <img id="profilePhoto" alt="Profile photo of S. Janani" />
+          </div>
+          <span class="float-chip chip-a"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="float-chip chip-b"><i class="fa-solid fa-brain"></i> ML</span>
+          <span class="float-chip chip-c"><i class="fa-solid fa-code"></i> Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Know me</span>
+          <h2>About <span class="grad">Me</span></h2>
+        </div>
+        <div class="about-card card reveal">
+          <div class="about-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="about-body">
+            <div id="aboutText"></div>
+            <div class="chips" id="aboutChips"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My journey</span>
+          <h2>My <span class="grad">Education</span></h2>
+        </div>
+        <div class="timeline" id="educationList"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I know</span>
+          <h2>Technical <span class="grad">Skills</span></h2>
+        </div>
+        <div class="skills-grid" id="skillsList"></div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section alt" id="certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Achievements</span>
+          <h2>My <span class="grad">Certifications</span></h2>
+        </div>
+        <div class="cert-grid" id="certList"></div>
+      </div>
+    </section>
+
+    <!-- ============ INTERNSHIP ============ -->
+    <section class="section" id="internship">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Experience</span>
+          <h2>Internship <span class="grad">Experience</span></h2>
+        </div>
+        <div class="intern-list" id="internList"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My work</span>
+          <h2>My <span class="grad">Projects</span></h2>
+        </div>
+        <div class="project-grid" id="projectList"></div>
+      </div>
+    </section>
+
+    <!-- ============ STRENGTHS ============ -->
+    <section class="section" id="strengths">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Who I am</span>
+          <h2>My <span class="grad">Strengths</span></h2>
+        </div>
+        <div class="strength-grid" id="strengthList"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Contact <span class="grad">Me</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards" id="contactList"></div>
+
+          <form class="contact-form card reveal" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <label>Your Name<input type="text" id="cfName" placeholder="Your name" required /></label>
+            <label>Your Message<textarea id="cfMsg" rows="5" placeholder="Write your message..." required></textarea></label>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+        <div class="socials center" id="contactSocials"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong class="footer-name" data-bind="name">S. Janani</strong>
+        <p id="footerNote"></p>
+      </div>
+      <div class="socials" id="footerSocials"></div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> <span data-bind="name">S. Janani</span>. All rights reserved.</p>
+  </footer>
+
+  <!-- ============ EXTRAS ============ -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast" role="status"></div>
+
+  <!-- Image preview (certificates & projects) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+    <figure class="lb-body">
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- data.js MUST come before script.js -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
