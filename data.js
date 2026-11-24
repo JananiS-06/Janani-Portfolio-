@@ -30,8 +30,8 @@ const PORTFOLIO = {
 
     // RESUME: put your PDF in assets/resume/ and write its file name here.
     // To update your resume later, simply replace that PDF file (keep the same name).
-    resume: "assets/resume/Janani_Resume.pdf",
-    resumeDownloadName: "S_Janani_Resume.pdf"            // name of the file when someone downloads it
+    resume: "assets/resume/jananis_resume.pdf",
+    resumeDownloadName: "jananis_resume.pdf"            // name of the file when someone downloads it
   },
 
   /* ------------------------------------------------------------------
