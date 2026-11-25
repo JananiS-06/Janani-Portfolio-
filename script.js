@@ -63,7 +63,7 @@
   setImage($("#profilePhoto"), P.photo, P.name.split(" ").map((w) => w[0]).join("").replace(/\./g, ""), "Add your photo in data.js");
 
   const resumeBtn = $("#resumeBtn");
-  resumeBtn.href = P.resume;
+  resumeBtn.href ="jananis_resume.pdf"
   resumeBtn.setAttribute("download", P.resumeDownloadName || "Resume.pdf");
 
   /* ---------- About ---------- */
