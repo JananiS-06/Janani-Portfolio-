@@ -117,7 +117,7 @@ const PORTFOLIO = {
     {
       title: "NPTEL Certificate",
       issuer: "NPTEL",
-      image: "assets/certificates/nptel.jpg",
+      image: "Soft_Skill_Development.pdf",
       icon: "fa-solid fa-award"
     },
     {
@@ -129,7 +129,7 @@ const PORTFOLIO = {
     {
       title: "Wadhwani Foundation Certificate",
       issuer: "Wadhwani Foundation",
-      image: "assets/certificates/wadhwani.jpg",
+      image: "Wadhwani_Foundation.pdf",
       icon: "fa-solid fa-award"
     }
     // , { title: "New Certificate", issuer: "Organisation", image: "assets/certificates/new.jpg", icon: "fa-solid fa-award" }
