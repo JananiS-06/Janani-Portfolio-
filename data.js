@@ -111,25 +111,25 @@ const PORTFOLIO = {
     {
       title: "IBM Certificate",                 // <- change to the exact certificate name
       issuer: "IBM",
-      image: "assets/certificates/ibm.jpg",
+      image: "ibm.jpg",
       icon: "fa-solid fa-award"
     },
     {
       title: "NPTEL Certificate",
       issuer: "NPTEL",
-      image:"Soft_Skill_Development.jpg",
+      image:"nptel.jpg",
       icon: "fa-solid fa-award"
     },
     {
       title: "Bajaj Finserv Certificate",
       issuer: "Bajaj Finserv",
-      image: "assets/certificates/bajaj-finserv.jpg",
+      image: "bajaj.jpg",
       icon: "fa-solid fa-award"
     },
     {
       title: "Wadhwani Foundation Certificate",
       issuer: "Wadhwani Foundation",
-      image:"Wadhwani_Foundation.jpg",
+      image:"wadhwani.jpg",
       icon: "fa-solid fa-award"
     }
     // , { title: "New Certificate", issuer: "Organisation", image: "assets/certificates/new.jpg", icon: "fa-solid fa-award" }
