@@ -129,7 +129,7 @@ const PORTFOLIO = {
     {
       title: "Wadhwani Foundation Certificate",
       issuer: "Wadhwani Foundation",
-      image:"wadhwani.pdf",
+      image:"wadhwani.jpg",
       icon: "fa-solid fa-award"
     }
     // , { title: "New Certificate", issuer: "Organisation", image: "assets/certificates/new.jpg", icon: "fa-solid fa-award" }
