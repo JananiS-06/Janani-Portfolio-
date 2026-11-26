@@ -94,9 +94,6 @@
   /* ---------- Certifications ---------- */
   $("#certList").innerHTML = D.certifications.map((c, i) => `
     <article class="card cert-card reveal">
-      <div class="cert-img" data-preview="cert" data-index="${i}">
-       <img data-src="${c.image}" data-title="${c.title}" data-sub="Upload certificate image" alt="${c.title}" />
-      </div>
       <div class="cert-body">
         <span class="cert-issuer"><i class="${c.icon || "fa-solid fa-award"}"></i>${c.issuer}</span>
         <h3>${c.title}</h3>
